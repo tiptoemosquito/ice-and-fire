@@ -25,8 +25,7 @@ class CLI
         puts "_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _"
         puts "_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _"
         puts ""
-     
-       #binding.pry
+    
         characters = IAF.all
 
         menu
@@ -41,6 +40,8 @@ class CLI
             menu
         elsif input == "exit"
             goodbye
+        elsif input == "#{index + 1}. #{character.name}"
+            character_selection
         else 
             invalid_response
         end
@@ -59,17 +60,31 @@ class CLI
         character_selection(input)
     end
 
-     def character_selection(characters)
-         character = IAF.find_by_iaf(characters)
-         character.each do |c|
-         puts " Name: #{c.name}"
-         puts " Gender: #{c.gender}"
-         puts " Culture: #{c.culture}"
-         puts " Aliases: #{c.aliases}"
-         puts ""
-         puts " Type in another character's name or 'exit'."
+    def character_selection(characters)
+        character = IAF.find_by_iaf(characters)
+        character.each do |c|
+        puts " Name: #{c.name}"
+        puts " Gender: #{c.gender}"
+        puts " Culture: #{c.culture}"
+        puts " Aliases: #{c.aliases}"
+        puts ""
         end
-     end
+        
+    end
+
+    # def recurring_list
+    #     input = gets.strip.downcase
+       
+    #     if input == "#{c.name}"
+    #         puts " Type another character's name or 'exit'."
+    #     elsif input == "exit"
+    #         goodbye
+    #     else 
+    #         invalid_response
+    #     end
+
+    #     character_selection(input)
+    # end
 
 
     def goodbye
