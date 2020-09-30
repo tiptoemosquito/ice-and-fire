@@ -10,12 +10,12 @@ class CLI
         puts "_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _"
         puts ""
         puts "         Welcome Game of Thrones lover!        " 
-        puts "       Missing your favorite characters?       "
-        puts "            Well you're in luck!               "
+        puts "   How well do you know your GOT characters?   "
+        puts "         Get to know a few of them now!        "
         puts ""
         puts "_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _"
         puts ""
-        puts "   To see a list of your favorite characters,  " 
+        puts "        To see a list of GOT characters,       " 
         puts "             type 'hold the door'.             "
         puts ""
         puts "_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _"
@@ -71,8 +71,7 @@ class CLI
         puts ""
         puts "To see another character, type 'winter is coming'."
         puts "Type 'exit' to exit."
-        end
-        
+        end   
     end
 
     def goodbye
