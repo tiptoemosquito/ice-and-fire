@@ -50,22 +50,23 @@ class CLI
         end
         puts ""
         puts ""
-        puts "That's what I do: I drink and I know things..." 
         puts "What character would you like more info on?"
+        puts "That's what I do: I drink and I know things..." 
+        
         input = gets.strip.downcase
 
         character_selection(input)
     end
 
-    def character_selection(name)
-        characters = IAF.find_by_iaf(name)
-        characters.each do |c|
-        puts "Name: #{c.name}"
-        puts "Gender: #{c.gender}"
-        puts "Culture: #{c.culture}"
-        puts "Aliases: #{c.aliases}"
-        end
-    end
+     def character_selection(name)
+         characters = IAF.find_by_iaf(name)
+         characters.each do |c|
+         puts "Name: #{c.name}"
+         puts "Gender: #{c.gender}"
+         puts "Culture: #{c.culture}"
+         puts "Aliases: #{c.aliases}"
+         end
+     end
 
 
     def goodbye
