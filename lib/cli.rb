@@ -66,7 +66,9 @@ class CLI
          puts " Gender: #{c.gender}"
          puts " Culture: #{c.culture}"
          puts " Aliases: #{c.aliases}"
-         end
+         puts ""
+         puts " Type in another character's name or 'exit'."
+        end
      end
 
 
