@@ -3,7 +3,7 @@ require 'pry'
 class API
 
     def self.get_data
-        url="https://anapioficeandfire.com/api/characters"
+        url="https://anapioficeandfire.com/api/characters?page2=&pagesize=50"
         uri=URI(url)
         response=Net::HTTP.get(uri)
         #binding.pry
