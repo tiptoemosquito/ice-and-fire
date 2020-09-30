@@ -1,6 +1,7 @@
 class CLI
 
     def call
+        API.get_data
         puts ""
         puts "      |^^^|          |^^^|          |^^^|      "
         puts "     _|___|_        _|___|_        _|___|_     "
@@ -25,8 +26,9 @@ class CLI
         puts "_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _"
         puts ""
      
-        API.get_data
+       #binding.pry
         characters = IAF.all
+
         menu
 
     end
@@ -45,26 +47,25 @@ class CLI
     end
 
     def character_list
-        IAF.all.each_with_index do |character, index|
-            puts "#{index + 1} #{character.name}"
+        IAF.all.each.with_index do |character, index|
+            puts "#{index + 1}. #{character.name}"
         end
         puts ""
         puts ""
-        puts "What character would you like more info on?"
+        puts "What character would you like more info on:"
         puts "That's what I do: I drink and I know things..." 
-        
         input = gets.strip.downcase
 
         character_selection(input)
     end
 
-     def character_selection(name)
-         characters = IAF.find_by_iaf(name)
-         characters.each do |c|
-         puts "Name: #{c.name}"
-         puts "Gender: #{c.gender}"
-         puts "Culture: #{c.culture}"
-         puts "Aliases: #{c.aliases}"
+     def character_selection(characters)
+         character = IAF.find_by_iaf(characters)
+         character.each do |c|
+         puts " Name: #{c.name}"
+         puts " Gender: #{c.gender}"
+         puts " Culture: #{c.culture}"
+         puts " Aliases: #{c.aliases}"
          end
      end
 

@@ -17,7 +17,9 @@ class IAF
     end
 
     def self.find_by_iaf(name)
-        self.all.select {|i| i.name == name}
+        self.all.select do |character|
+            character.name.downcase == name
+        end
     end
 
 end
