@@ -75,21 +75,6 @@ class CLI
         
     end
 
-    # def recurring_list
-    #     input = gets.strip.downcase
-       
-    #     if input == "#{c.name}"
-    #         puts " Type another character's name or 'exit'."
-    #     elsif input == "exit"
-    #         goodbye
-    #     else 
-    #         invalid_response
-    #     end
-
-    #     character_selection(input)
-    # end
-
-
     def goodbye
         puts "Never forget what you are." 
         puts "The rest of the world will not."
