@@ -40,8 +40,9 @@ class CLI
             menu
         elsif input == "exit"
             goodbye
-        elsif input == "#{index + 1}. #{character.name}"
-            character_selection
+        elsif input == "winter is coming"
+            character_list
+            menu
         else 
             invalid_response
         end
@@ -68,6 +69,8 @@ class CLI
         puts " Culture: #{c.culture}"
         puts " Aliases: #{c.aliases}"
         puts ""
+        puts "To see another character, type 'winter is coming'."
+        puts "Type 'exit' to exit."
         end
         
     end
