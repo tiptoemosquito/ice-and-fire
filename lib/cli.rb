@@ -79,7 +79,7 @@ class CLI
         puts " Name:     #{c.name}   "
         puts " Gender:   #{c.gender} "
         puts " Culture:  #{c.culture}"
-        puts " Aliases:  #{c.aliases}"
+        puts " Alias(es):  #{c.aliases}"
         puts " Title(s): #{c.titles} "
         puts ""
         puts "          ^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^ "
