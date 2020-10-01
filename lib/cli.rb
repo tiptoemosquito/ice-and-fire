@@ -67,14 +67,14 @@ class CLI
     def character_selection(characters)
         character = IAF.find_by_iaf(characters)
         character.each do |c|
-        puts " Name:    #{c.name}"
-        puts " Gender:  #{c.gender}"
-        puts " Culture: #{c.culture}"
-        puts " Aliases: #{c.aliases}"
-        puts " Titles:  #{c.titles}"
+        puts " Name:     #{c.name}   "
+        puts " Gender:   #{c.gender} "
+        puts " Culture:  #{c.culture}"
+        puts " Aliases:  #{c.aliases}"
+        puts " Title(s): #{c.titles} "
         puts ""
         puts "          ^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^ "
-        puts "           To see another character's, type 'winter is coming'."
+        puts "            To see another character, type 'winter is coming'.  "
         puts "" 
         puts "                         To exit type 'exit'."
         puts ""
