@@ -3,9 +3,9 @@ class CLI
     def call
         API.get_data
         puts ""
-        puts "              |^^^|          |^^^|          |^^^|      "
-        puts "             _|___|_        _|___|_        _|___|_     "
-        puts "            |       |      |       |      |       |    "
+        puts "             |^^^|          |^^^|          |^^^|       "
+        puts "            _|___|_        _|___|_        _|___|_      "
+        puts "           |       |      |       |      |       |     "
         puts "       ^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^ "
         puts "      |_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _|"
         puts "      |                                               |"
@@ -67,11 +67,11 @@ class CLI
     def character_selection(characters)
         character = IAF.find_by_iaf(characters)
         character.each do |c|
-        puts " Name: #{c.name}"
-        puts " Gender: #{c.gender}"
+        puts " Name:    #{c.name}"
+        puts " Gender:  #{c.gender}"
         puts " Culture: #{c.culture}"
         puts " Aliases: #{c.aliases}"
-        puts " Titles: #{c.titles}"
+        puts " Titles:  #{c.titles}"
         puts ""
         puts "          ^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^ "
         puts "           To see another character's, type 'winter is coming'."
@@ -92,9 +92,9 @@ class CLI
 
     def invalid_response
         puts ""
-        puts "You know nothing, Jon Snow."
-        puts "                -Ygritte"
-        puts "Try again."
+        puts "                      You know nothing, Jon Snow."
+        puts "                                       -Ygritte"
+        puts "                              Try again."
         menu
     end
 
