@@ -35,10 +35,10 @@ class CLI
     def menu
         
         input = gets.strip.downcase
-         while input != 'exit' do
-            if input == 'hold the door'
+         while input != "exit" do
+            if input == "hold the door"
                 character_list
-            elsif input == 'winter is coming'
+            elsif input == "winter is coming"
                 character_list
             else
                 invalid_response
@@ -53,22 +53,6 @@ class CLI
         puts "         _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  "
     end
 
-
-    # def menu
-    #     input = gets.strip.downcase
-        
-    #     if input == "hold the door"
-    #         character_list
-    #         menu
-    #     elsif input == "exit"
-    #         goodbye
-    #     elsif input == "winter is coming"
-    #         character_list
-    #         menu
-    #     else 
-    #         invalid_response
-    #     end
-    # end
 
     def character_list
         IAF.all.each.with_index do |character, index|
@@ -102,10 +86,6 @@ class CLI
         puts ""
         end   
     end
-
-    # def goodbye
-
-    # end
 
     def invalid_response
         puts ""
