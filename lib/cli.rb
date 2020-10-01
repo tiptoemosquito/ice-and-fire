@@ -10,17 +10,17 @@ class CLI
         puts "_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _"
         puts ""
         puts "         Welcome Game of Thrones lover!        " 
-        puts "   How well do you know your GOT characters?   "
+        puts "        Do you know your GOT characters?       "
         puts "         Get to know a few of them now!        "
         puts ""
         puts "_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _"
         puts ""
-        puts "        To see a list of GOT characters,       " 
+        puts "              To enter the realm,              " 
         puts "             type 'hold the door'.             "
         puts ""
         puts "_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _"
         puts ""
-        puts "             To exit type 'exit'.              "
+        puts "              To exit type 'exit'.             "
         puts ""
         puts "_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _"
         puts "_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _"
@@ -54,8 +54,11 @@ class CLI
         end
         puts ""
         puts ""
-        puts "What character would you like more info on:"
-        puts "That's what I do: I drink and I know things..." 
+        puts "            That's what I do: I drink and I know things..." 
+        puts ""
+        puts "              What character would you like more info on:"
+        puts ""
+        
         input = gets.strip.downcase
 
         character_selection(input)
@@ -70,17 +73,20 @@ class CLI
         puts " Aliases: #{c.aliases}"
         puts " Titles: #{c.titles}"
         puts ""
-        puts "To see another character, type 'winter is coming'."
-        puts "To exit type 'exit'."
+        puts "           ^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^"
+        puts "           To see another characters, type 'winter is coming'."
+        puts "" 
+        puts "                         To exit type 'exit'."
         puts ""
         end   
     end
 
     def goodbye
-        puts "Never forget what you are." 
-        puts "The rest of the world will not."
-        puts "Wear it like armor, and it can never be used to hurt you."
-        puts "                                 -Tyrion Lannister"
+        puts "                       Never forget what you are." 
+        puts "                    The rest of the world will not."
+        puts "        Wear it like armor, and it can never be used to hurt you."
+        puts "                                             -Tyrion Lannister"
+        puts "        _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ "
     end
 
     def invalid_response
