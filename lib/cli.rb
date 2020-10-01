@@ -68,6 +68,7 @@ class CLI
         puts " Gender: #{c.gender}"
         puts " Culture: #{c.culture}"
         puts " Aliases: #{c.aliases}"
+        puts " Titles: #{c.titles}"
         puts ""
         puts "To see another character, type 'winter is coming'."
         puts "Type 'exit' to exit."
