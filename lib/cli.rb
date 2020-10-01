@@ -33,20 +33,42 @@ class CLI
     end
 
     def menu
-        input = gets.strip.downcase
         
-        if input == "hold the door"
-            character_list
-            menu
-        elsif input == "exit"
-            goodbye
-        elsif input == "winter is coming"
-            character_list
-            menu
-        else 
-            invalid_response
+        input = gets.strip.downcase
+         while input != 'exit' do
+            if input == 'hold the door'
+                character_list
+            elsif input == 'winter is coming'
+                character_list
+            else
+                invalid_response
+            end
+            input = gets.strip.downcase
         end
+        puts ""
+        puts "                      Never forget what you are." 
+        puts "                    The rest of the world will not."
+        puts "        Wear it like armor, and it can never be used to hurt you."
+        puts "                                             -Tyrion Lannister"
+        puts "         _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  "
     end
+
+
+    # def menu
+    #     input = gets.strip.downcase
+        
+    #     if input == "hold the door"
+    #         character_list
+    #         menu
+    #     elsif input == "exit"
+    #         goodbye
+    #     elsif input == "winter is coming"
+    #         character_list
+    #         menu
+    #     else 
+    #         invalid_response
+    #     end
+    # end
 
     def character_list
         IAF.all.each.with_index do |character, index|
@@ -81,14 +103,9 @@ class CLI
         end   
     end
 
-    def goodbye
-        puts ""
-        puts "                      Never forget what you are." 
-        puts "                    The rest of the world will not."
-        puts "        Wear it like armor, and it can never be used to hurt you."
-        puts "                                             -Tyrion Lannister"
-        puts "         _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  "
-    end
+    # def goodbye
+
+    # end
 
     def invalid_response
         puts ""
