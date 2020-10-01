@@ -1,15 +1,14 @@
 class IAF
 
-    attr_accessor :name, :gender, :culture, :aliases, :titles
+    attr_accessor :name, :gender, :culture, :aliases
 
     @@all = []
 
-    def initialize(name: nil, gender: nil, culture: nil, aliases: nil, titles: nil)
+    def initialize(name: nil, gender: nil, culture: nil, aliases: nil)
         @name = name
         @gender = gender
         @culture = culture
-        @aliases = aliases 
-        @titles = titles
+        @aliases = aliases
         @@all << self
     end
 

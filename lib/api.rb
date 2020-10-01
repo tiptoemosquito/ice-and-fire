@@ -10,7 +10,7 @@ class API
         characters=JSON.parse(response)
         characters.each do |c|
             if c["name"] != ""
-                IAF.new(name: c["name"], gender: c["gender"], culture: c["culture"], aliases: c["aliases"], titles: c["titles"]) if c["name"] != nil
+                IAF.new(name: c["name"], gender: c["gender"], culture: c["culture"], aliases: c["aliases"]) if c["name"] != nil
             end
         end
     end
