@@ -16,7 +16,7 @@ class CLI
         puts "      |_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _|"
         puts "      |                                               |"
         puts "      |              To enter the realm,              |" 
-        puts "      |             type 'hold the door'.             |"
+        puts "      |                  type 'hodor'.                |"
         puts "      |                                               |"
         puts "      |_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _|"
         puts "      |                                               |"
@@ -36,12 +36,15 @@ class CLI
         
         input = gets.strip.downcase
          while input != "exit" do
-            if input == "hold the door"
+            if input == "hodor"
                 character_list
             elsif input == "winter is coming"
                 character_list
             else
-                invalid_response
+                puts ""
+                puts "                      You know nothing, Jon Snow."
+                puts "                                       -Ygritte"
+                puts "                              Try again."
             end
             input = gets.strip.downcase
         end
@@ -85,14 +88,6 @@ class CLI
         puts "                         To exit type 'exit'."
         puts ""
         end   
-    end
-
-    def invalid_response
-        puts ""
-        puts "                      You know nothing, Jon Snow."
-        puts "                                       -Ygritte"
-        puts "                              Try again."
-        menu
     end
 
 end
