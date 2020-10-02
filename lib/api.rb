@@ -3,10 +3,10 @@ require 'pry'
 class API
 
     def self.get_data
-        url="https://anapioficeandfire.com/api/characters?page=11&pagesize=25"
+        url="https://anapioficeandfire.com/api/characters?page=6&pagesize=25"
         uri=URI(url)
         response=Net::HTTP.get(uri)
-        #binding.pry
+       
         characters=JSON.parse(response)
         characters.each do |c|
             if c["name"] != ""
@@ -14,7 +14,7 @@ class API
             end
         end
     end
-        #binding.pry
+       
 
 
 end

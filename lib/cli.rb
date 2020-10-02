@@ -21,7 +21,7 @@ class CLI
         puts "               |                                               |"
         puts "               |_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _|"
         puts "               |                                               |"
-        puts "               |             To exit type 'exit'.              |"
+        puts "               |               To exit type 'exit'.            |"
         puts "               |                                               |"
         puts "               |_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _|"
         puts "               |_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _|"
@@ -77,11 +77,11 @@ class CLI
     def character_selection(characters)
         character = IAF.find_by_iaf(characters)
         character.each do |c|
-        puts " Name:     #{c.name}   "
-        puts " Gender:   #{c.gender} "
-        puts " Culture:  #{c.culture}"
-        puts " Alias(es):  #{c.aliases}"
-        puts " Title(s): #{c.titles} "
+        puts " Name:       #{c.name}   "
+        puts " Gender:     #{c.gender} "
+        puts " Culture:    #{c.culture}"
+        puts " Alias(es)   #{c.aliases}"
+        puts " Title(s):   #{c.titles} "
         puts ""
         puts "          ^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^ "
         puts "            To see another character, type 'winter is coming'.  "
