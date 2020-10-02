@@ -64,9 +64,9 @@ class CLI
         end
         puts ""
         puts ""
-        puts "          That's what I do: I drink and I know things..." 
+        puts "                  That's what I do: I drink and I know things..." 
         puts ""
-        puts "              Enter a character's name for more info:"
+        puts "                     Enter a character's name for more info:"
         puts ""
         
         input = gets.strip.downcase
