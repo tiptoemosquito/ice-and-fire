@@ -1,6 +1,4 @@
 
-install requirements?
-
   ICE and Fire 
 ================
    A GoT CLI
