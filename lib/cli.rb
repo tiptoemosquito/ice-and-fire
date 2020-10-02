@@ -10,7 +10,7 @@ class CLI
         puts "      |_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _|"
         puts "      |                                               |"
         puts "      |         Welcome Game of Thrones lover!        |" 
-        puts "      |        Do you know your GOT characters?       |"
+        puts "      |        Do you know your GoT characters?       |"
         puts "      |         Get to know a few of them now!        |"
         puts "      |                                               |"
         puts "      |_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _|"
