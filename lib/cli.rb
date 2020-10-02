@@ -2,28 +2,29 @@ class CLI
 
     def call
         API.get_data
+
         puts ""
-        puts "             |^^^|          |^^^|          |^^^|       "
-        puts "            _|___|_        _|___|_        _|___|_      "
-        puts "           |       |      |       |      |       |     "
-        puts "       ^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^ "
-        puts "      |_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _|"
-        puts "      |                                               |"
-        puts "      |         Welcome Game of Thrones lover!        |" 
-        puts "      |        Do you know your GoT characters?       |"
-        puts "      |         Get to know a few of them now!        |"
-        puts "      |                                               |"
-        puts "      |_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _|"
-        puts "      |                                               |"
-        puts "      |              To enter the realm,              |" 
-        puts "      |                  type 'hodor'.                |"
-        puts "      |                                               |"
-        puts "      |_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _|"
-        puts "      |                                               |"
-        puts "      |             To exit type 'exit'.              |"
-        puts "      |                                               |"
-        puts "      |_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _|"
-        puts "      |_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _|"
+        puts "                      |^^^|          |^^^|          |^^^|       "
+        puts "                     _|___|_        _|___|_        _|___|_      "
+        puts "                    |       |      |       |      |       |     "
+        puts "                ^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^ "
+        puts "               |_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _|"
+        puts "               |                                               |"
+        puts "               |         Welcome Game of Thrones lover!        |" 
+        puts "               |        Do you know your GoT characters?       |"
+        puts "               |         Get to know a few of them now!        |"
+        puts "               |                                               |"
+        puts "               |_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _|"
+        puts "               |                                               |"
+        puts "               |              To enter the realm,              |" 
+        puts "               |                  type 'hodor'.                |"
+        puts "               |                                               |"
+        puts "               |_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _|"
+        puts "               |                                               |"
+        puts "               |             To exit type 'exit'.              |"
+        puts "               |                                               |"
+        puts "               |_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _|"
+        puts "               |_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _|"
         puts ""
     
         characters = IAF.all
@@ -49,11 +50,11 @@ class CLI
             input = gets.strip.downcase
         end
         puts ""
-        puts "                      Never forget what you are." 
-        puts "                    The rest of the world will not."
-        puts "        Wear it like armor, and it can never be used to hurt you."
+        puts "                        Never forget what you are." 
+        puts "                      The rest of the world will not."
+        puts "          Wear it like armor, and it can never be used to hurt you."
         puts "                                             -Tyrion Lannister"
-        puts "         _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  "
+        puts "           _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  "
     end
 
 
