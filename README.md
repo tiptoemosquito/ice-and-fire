@@ -16,6 +16,7 @@ Copy and paste the following code into your terminal, then press 'enter' to inst
  ```
 
  You can find the ruby code for this CLI at the following URL.
+ 
  URL: https://github.com/tiptoemosquito/ice-and-fire
 
 **Description**
