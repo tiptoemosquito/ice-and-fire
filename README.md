@@ -1,24 +1,24 @@
 
   ICE and Fire 
 ================
-   A GoT CLI
-----------------
+ Welcome!
+---------
+This CLI provides a list of characters from the extremely popular books and HBO show, _Game of Thrones_, per the An Api of Ice and Fire website.
 
 **Installation**
 ----------------
- 
+Copy and paste the following code into your terminal, then press 'enter' to install ** Be sure to install one gem at a time, first 'json', then 'httparty' 
+
  gem install json
  gem install httparty
 
 **Description**
 ---------------
- To run the CLI, enter the following code into your terminal and then press enter.
+To run the CLI, enter the following code into your terminal and then press enter.
 
  ruby bin/got
 
-Foloow the prompts and respond accordingly to learn more about each character listed.
-
-This CLI provides a list of characters from the extremely popular books and HBO show, _Game of Thrones_, per the An Api of Ice and Fire website.
+Follow the prompts and respond accordingly to learn more about each character listed.
 
 **Contributing**
 ---------------
