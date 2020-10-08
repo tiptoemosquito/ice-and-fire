@@ -45,7 +45,7 @@ class CLI
                 puts ""
                 puts "                      You know nothing, Jon Snow."
                 puts "                                       -Ygritte"
-                puts "                              Try again."
+                puts "                    Please try again and type 'hodor'."
             end
             input = gets.strip.downcase
         end
